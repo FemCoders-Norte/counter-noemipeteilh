@@ -1,14 +1,18 @@
 # :clock8: Vamos a crear un contador con JS
 
+### Importante
+Antes de empezar a realizar el ejercicio deberás instalar node.js y correr los tests y cerciorarte de que fallan.
+
 ## I Parte
 
 Tenemos una página que empieza con un número 0, tenemos 3 botones, el de la izquierda se encarga de disminuir el número, el del medio volverá a iniciar a 0 el número y el de la derecha aumentará el número.
 
-1. Tenemos 2 archivos index.html y style.css con unos estilos ya definidos
-2. Has de crear un archivo en javascript llamado "counter.js" en la carpeta js y has de vincular con el archivo de html.
-3. Has de crear las funciones en el archivo de javascript para cambiar el número haciendo click en los botones que correspondan, se puede manipular el archivo index.html si lo necesitas.
+1. Tenemos 2 archivos dentro de la carpeta src/js, en counter.js realizarás las funciones necesarias para añadir la lógica del contador, y en events.js escribirás el código necesario para disparar un evento por cada botón.
+2. Hay una carpeta llamada tests que contiene un archivo llamado app.test.js, allí encontrarás los tests que han de pasar, no modifiques este archivo, está aquí para saber que es lo que espera que haga la función, guíate el él.
+3. El último test debería fallar en la primera parte del ejercicio, cuando resuelvas la segunda parte deberían pasar todos los test. 
 
-### Importante
+
+### Ojo
 No pases a la segunda parte si no tienes resuelta la primera.
 
 ## II Parte
@@ -28,7 +32,7 @@ Puedes comprobar que lo tienes instalado con el comando:
 node -v
 ```
 
-Una vez instalado Node.js, has de instalar las dependencias del proyecto (en la carpeta donde tienes todos los documentos del proyecto clonado) con el comando:
+Una vez instalado node.js, has de instalar las dependencias del proyecto (en la carpeta donde tienes todos los documentos del proyecto clonado) con el comando:
 
 ```
 npm install
@@ -44,10 +48,7 @@ Para ejecutar los test has de ejecutar el comando:
 
 ```
 npm test
-```
-O
-```
-npm t
+
 ```
 
 ## ¿Qué aprenderemos?

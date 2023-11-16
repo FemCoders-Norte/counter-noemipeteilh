@@ -14,19 +14,27 @@ describe("counter test", () => {
     expect(document.getElementById("number").innerHTML).toBe("0");
   });
 
-  it("should increment to 1", () => {
-    add();
+  it("should increment to 1", async () => {
+    add()
     expect(document.getElementById("number").innerHTML).toBe("1");
   });
 
   it("should reinit to 0", () => {
-    const button = document.getElementById("reset");
+    const counter = document.getElementById("number");
+    counter.innerHTML = 1;
     reset();
     expect(document.getElementById("number").innerHTML).toBe("0");
   });
 
   it("should decrese in 1", () => {
+    const counter = document.getElementById("number");
+    counter.innerHTML = 1;
     decrease();
     expect(document.getElementById("number").innerHTML).toBe("0");
   });
+
+  it("should not get negative numbers", () => {
+    decrease();
+    expect(document.getElementById("number").innerHTML).toBe("0");
+  })
 });

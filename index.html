@@ -11,13 +11,15 @@
 
 <body class="container">
     <h1>Contador</h1>
-    <p class="number">0</p>
+    <p class="number" id="number">0</p>
     <div class="buttons">
-        <button class="button">Disminuir</button>
-        <button class="button">Volver a 0</button>
-        <button class="button">Aumentar</button>
+        <button class="button" id="decrease">Disminuir</button>
+        <button class="button" id="reset">Volver a 0</button>
+        <button class="button" id="add">Aumentar</button>
     </div>
 
+    <script src="./src/js/counter.js" type="module"></script>
+    <script src="./src/js/events.js" type="module"></script>
 </body>
 
 </html>
