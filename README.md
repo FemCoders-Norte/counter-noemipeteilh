@@ -22,7 +22,7 @@ No pases a la segunda parte si no tienes resuelta la primera.
 Ahora refactoriza tu código para que cuando el número esté en 0 no baje a números negativos y permanezca en 0.
 
 
-## Instalación de la parte testing
+## Instalación Tests
 
 Para poder ejecutar los test has de tener instalado [Node.js](https://nodejs.org/es/). Versión LTS.
 
